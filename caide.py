@@ -3,12 +3,11 @@ from flask import Flask, render_template
 app = Flask("MyApp")
 
 @app.route("/")
-def hello():
-    return "The call was coming from inside the house"
+def hello():render_template("Donegal.html")
 
-@app.route("/<name>")
+@app.route("/<Newsletter>")
 def hello_someone(name):
-	return render_template("hello.html", name=name.title())   
+	return render_template("DonegalNews.html", name=name.title())   
 
 @app.route("/signup", methods=["POST"])
 def sign_up():

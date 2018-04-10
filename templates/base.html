@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block page_title %}{% endblock %}</title>
+  <link href="/static/css/donegalstyle.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+	<ul>
+  		<li><a href="/">Home</a></li>
+  		<li><a href="/info">Info</a></li>
+ 		<li><a href="/news">Newsletter</a></li>
+	</ul>
+<br> <h1>{% block title %}{% endblock %}</h1>
+  <p>
+  	{% block content %}
+  	{% endblock %}
+  </p>
+
+<img src="/static/images/DonegalHomePage.png" alt="Map" id="MapHome"/>
+  
+</body>
+
+</html>

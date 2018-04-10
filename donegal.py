@@ -17,4 +17,3 @@ def send_simple_message():
 #need to make to "to" variable also need to make the dear "name" variable in the body text of the mailgun
               "text": "Dear Caitlin, Thank You for signing up for our Donegal Tourist Newsletter. We'll be in touch to let you know of any upcoming events! "})
 
-    web: gunicorn -w 4 -b "0.0.0.0:$PORT" app:app
